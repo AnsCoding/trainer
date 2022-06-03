@@ -1,51 +1,53 @@
 import React from 'react';
-import Posts from '../components/Posts';
+import PostsList from '../components/PostsList';
 
-export default function Homepage() {
+export default function HomePage() {
 	return (
-		<>
+		<div className='page-container'>
 			<main>
 				<header>
-					<div class='logo'>
-						<div class='main-logo'>Dstress</div>
-						<div class='slogan'>Personlig Træning & Massage</div>
+					<div className='logo'>
+						<div className='main-logo'>Dstress</div>
+						<div className='slogan'>Personlig Træning & Massage</div>
 					</div>
 					<nav>
 						<ul>
-							<a href='/'>
+							<a href='/#'>
 								<li>Prisliste</li>
 							</a>
-							<a href='/'>
+							<a href='/#'>
 								<li>Kontakt os</li>
 							</a>
 						</ul>
 					</nav>
 				</header>
-				<section class='hero-section'>
-					<div class='left-hero'>
+				<section className='hero-section'>
+					<div className='left-hero'>
 						<h1>Nå nye højder indenfor sundhed og velvære</h1>
 						<h3>Personlig træning & massage</h3>
-						<a href='/'>
+						<a href='/#'>
 							<button>Kontakt os</button>
 						</a>
 					</div>
-					<div class='right-hero'></div>
+					<div className='right-hero'>
+						<img src='mindfullness-img.png' alt='Mindfullness Illustration' />
+					</div>
 				</section>
 			</main>
-			<section class='services'>
-				<div class='top-services'>
-					<div class='img-box'>
+			<section className='services'>
+				<div className='top-services'>
+					<div className='img-box'>
 						<img src='outdoors-training.png' alt='Outdoor Training' />
 					</div>
-					<div class='service-black'>
-						<Posts />
+					<div className='service-black'>
+						<PostsList />
 					</div>
 				</div>
-				<div class='bot-services'>
-					<div class='service-white'>
-						<Posts />
+				<div className='bot-services'>
+					<div className='service-white'>
+						<PostsList />
 					</div>
-					<div class='img-box'>
+					<div className='img-box'>
 						<img src='hotstone-massage.png' alt='Hot Stone Massage' />
 					</div>
 				</div>
@@ -54,6 +56,6 @@ export default function Homepage() {
 				<p>Dstress - Personlig Træning & Massage</p>
 				<p>© COPYRIGHT 2022. ALL RIGHTS RESERVED.</p>
 			</footer>
-		</>
+		</div>
 	);
 }
